@@ -21,7 +21,7 @@ export default function ImageSlider() {
     const [images, setImages] = useState<ImageData[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
     const [isplaying, setIsPlaying] = useState<boolean>(true);
-    const interval = 10000;
+    const interval = 3000;
 
     const fetchImages = async (): Promise<void> => {
         try {
